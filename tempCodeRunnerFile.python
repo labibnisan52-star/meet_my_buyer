@@ -1,0 +1,23 @@
+
+def error(x , n ):
+    es = 0.5* 10**(2-n)
+    sum = 0 
+    term = 1 
+    k = 0 
+    ea = 100
+    print ("sum    || ea")
+    while ea >= es:
+        sum = sum+term 
+        ea = (term/sum) *100
+        k = k+1 
+        print(sum , ea)
+        term = term* (x/k )
+       
+    
+    return sum ,ea,es
+
+
+print(error(0.5, 3))
+
+
+
